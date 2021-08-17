@@ -1,23 +1,23 @@
 # squirrelAI
 
 
-## 项目说明
+## Projektanleitung 5
 
 ----
 <table>
 
 <tr>
-<td>产品名称：</td>
-<td>松鼠AI</td>
-<td>版本：</td>
-<td>V 2.2</td>
+<td>Produktname:</td
+<td>Eichhörnchen AI</td
+<td>Version:</td
+<td>V 2.2</td
 </tr>
 
 <tr>
-<td>作者：</td>
-<td>张益斌</td>
-<td>更新日期：</td>
-<td>2018/10/13</td>
+<td>Autor:</td
+<td>Yibin Zhang</td
+<td>Aktualisierungsdatum:</td
+<td>2018/10/13</td
 </tr>
 
 </table>
@@ -74,387 +74,387 @@ Das gesamte Squirrel AI-Projekt ist in zwei Schichten unterteilt: die Funktionss
 
 Die funktionale Schicht als Ganzes ist in drei Teile unterteilt, und zwar in die Entwurfsschicht (Basisschicht), die Anwendungsschicht (Anwendungsschicht) und die Funktionsschicht (AI-Funktionsschicht). <br>
 
-a)foundation(基础层):
+a) Fundament (Basisschicht):
 <table>
-<tr>
-<td>功能</td>
-<td>包</td>
-<td>类</td>
-<td>方法</td>
-<td>参数</td>
-<td>返回类型</td>
-<td>描述</td>
+<tr
+<td>Funktionen</td
+<td>Pakete</td
+<td>Klassen</td
+<td>Methoden</td
+<td>Parameter</td>
+<td>Rückgabeart</td
+<td>Beschreibung</td
 </tr>
     
 <tr>
-<td>接口定义</td>
-<td>com.zhangyibin.foundation.wechatinterface;</td>
-<td>WechatInterface</td>
+<td>Schnittstellendefinition</td
+<td>com.zhangyibin.foundation.wechatinterface;</td
+<td>WechatSchnittstelle</td
 <td>/</td>
 <td>/</td>
 <td>/</td>
-<td>定义常量</td>
+<td>Definieren von Konstanten</td
 </tr>
     
 <tr>
-<td>获取UUID</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>getUUID()</td>
+<td>UUUID abrufen</td>
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>getUUID()</td
 <td>/</td>
 <td>String</td>
-<td>微信登录的唯一识别信息</td>
+<td>Eigene Identifizierungsdaten für die Wechat-Anmeldung</td
+</tr>
+
+<tr
+<td>QR-Code für die Anmeldung</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>QrCode anzeigen()</td
+<td>/</td>
+<td>/</td>
+<td>Den QR-Code für die Anmeldung abrufen</td
 </tr>
 
 <tr>
-<td>登录二维码</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>showQrCode()</td>
+<td>QR-Code anzeigen</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>QRCodeFrame</td
+<td>QRCodeFrame()</td
+<td>Dateipfad:QR-Code-Bildadresse</td
 <td>/</td>
-<td>/</td>
-<td>获取登录二维码</td>
+<td>Dimensionscode, der über ein Formular angezeigt wird</td
 </tr>
 
-<tr>
-<td>展示二维码</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>QRCodeFrame</td>
-<td>QRCodeFrame()</td>
-<td>filePath:二维码图片地址</td>
-<td>/</td>
-<td>二维码通过窗体展示</td>
-</tr>
-
-<tr>
-<td>登录等待</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
+<tr
+<td>Anmeldung wartet</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
 <td>waitForLogin() ()</td>
 <td>/</td>
-<td>/</td>
-<td>扫描二维码登录验证</td>
+<td>/</td
+<td>Scannen des QR-Codes zur Überprüfung der Anmeldung</td
 </tr>
 
 <tr>
-<td>登录等待</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>login()</td>
+<td>Anmeldung wartet</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>anmelden()</td
 <td>/</td>
-<td>boolean</td>
-<td>登录成功返回true</td>
+<td>Boolean</td
+<td>Anmeldung erfolgreich: true</td
 </tr>
 
 <tr>
-<td>初始化</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>wxInit()</td>
+<td>Initialisierung</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>wxInit()</td
+<td>/</td
+<td>Boolean</td
+<td>Initialisierungsausnahme: gibt false zurück; funktioniert, um zu überprüfen, ob das Konto auf der schwarzen Liste von WeChat steht</td
+</tr>
+
+<tr
+<td>Statusmeldung</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>wxStatusNotify()</td
 <td>/</td>
-<td>boolean</td>
-<td>初始化异常：返回false;作用于验证账号是否为微信黑名单</td>
+<td>Boolean</td
+<td>StatusNotifyMonitorException: gibt false zurück;</td
 </tr>
 
 <tr>
-<td>状态通知</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>wxStatusNotify()</td>
+<td>Eine Liste von Freunden erhalten</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>Kontakt herstellen()</td
 <td>/</td>
-<td>boolean</td>
-<td>状态通知监控异常：返回false;</td>
+<td>Boolean</td
+<td>Freundesliste erhalten fehlgeschlagen: return false;</td
 </tr>
 
 <tr>
-<td>获取好友列表</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>getContact()</td>
-<td>/</td>
-<td>boolean</td>
-<td>好友列表获取失败:返回false;</td>
-</tr>
-
-<tr>
-<td>监控消息</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>syncCheck()</td>
+<td>Überwachungsmeldungen</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>syncCheck()</td
 <td>/</td>
 <td>int</td>
-<td>作用于是否获取到好友消息内容</td>
+<td>Aktion, ob der Inhalt der Nachricht eines Freundes abgerufen werden soll</td
 </tr>
 
 <tr>
-<td>发送消息</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>webwxsendmsg()</td>
-<td>
-String content:消息内容
-String to：接收好友
+<td>Senden Sie eine Nachricht</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>webwxsendmsg()</td
+<td
+String content:Inhalt der Nachricht
+String an: den empfangenden Freund
 </td>
 <td>/</td>
-<td>处理消息发送</td>
+<td>Nachrichtenzustellung handhaben</td
 </tr>
 
 <tr>
-<td>最新消息</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>webwxsync()</td>
+<td>Neueste Nachrichten</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>webwxsync()</td
 <td>/</td>
-<td>JSON</td>
-<td>获取消息内容</td>
+<td>JSON</td
+<td>Nachrichteninhalt abrufen</td
 </tr>
 
 <tr>
-<td>回复消息</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>handleMsg()</td>
-<td>JSONObject data:消息内容</td>
+<td>Auf eine Nachricht antworten</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>handleMsg()</td
+<td>JSONObject data:Nachrichteninhalt</td
 <td>/</td>
-<td>实现给予好友消息回复</td>
+<td>Einführung einer Antwort auf die Nachricht eines Freundes</td
 </tr>
 
-<tr>
-<td>用户备注名</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>getUserRemarkName()</td>
-<td>String id:微信ID</td>
+<tr
+<td>Name der Benutzerkennung</td
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>BenutzermarkenName()</td
+<td>String id:WeChatID</td
 <td>String</td>
-<td>获取到好友备注名称</td>
+<td>GetUserRemarkName</td
+</tr>
+
+<tr
+<td>Listener</td>
+<td>com.zhangyibin.foundation.wechatapp;</td
+<td>WechatApp</td
+<td>listenMsgMode()</td
+<td>/</td>
+<td>/</td>
+<td>Aufrechterhaltung der Netzverbindung</td
 </tr>
 
 <tr>
-<td>监听程序</td>
-<td>com.zhangyibin.foundation.wechatapp;</td>
-<td>WechatApp</td>
-<td>listenMsgMode()</td>
-<td>/</td>
-<td>/</td>
-<td>保持网络连接</td>
-</tr>
-
-<tr>
-<td>好友通讯录</td>
-<td>com.zhangyibin.foundation.util;</td>
-<td>AddressBook</td>
+<td>Adressbuch der Freunde</td
+<td>com.zhangyibin.foundation.util;</td
+<td>Adressbuch</td>
 <td>getAddressBookList()</td>
-<td>JSONObject jsonObject:好友列表JSON</td>
+<td>JSONObject jsonObject:buddy list JSON</td
 <td>/</td>
-<td>
-1.获取好友列表<br>
-2.新好友插入到数据库中
+<td
+1. eine Liste von Freunden erstellen<br
+2. neue Freunde in die Datenbank einfügen
 </td>
 </tr>
 
 <tr>
-<td>Cookie信息</td>
-<td>com.zhangyibin.foundation.util;</td>
-<td>CookieUtil</td>
-<td>getCookie()</td>
-<td>HttpRequest request:Http请求</td>
+<td>Cookie-Informationen</td
+<td>com.zhangyibin.foundation.util;</td
+<td>CookieUtil</td
+<td>getCookie()</td
+<td>HttpRequest Anfrage:Http-Anfrage</td
+<td>String</td
+<td>Browser-Cookie-Informationen simulieren</td
+</tr>
+
+
+<tr>
+<td>Fänger</td
+<td>com.zhangyibin.foundation.util;</td
+<td>Passstücke</td
+<td>match()</td
+<td
+String p :regulärer Ausdruck
+String str : Übereinstimmung mit String
+</td>
 <td>String</td>
-<td>模拟浏览器Cookie信息</td>
-</tr>
-
-
-<tr>
-<td>匹配器</td>
-<td>com.zhangyibin.foundation.util;</td>
-<td>Matchers</td>
-<td>match()</td>
-<td>
-String p :正则表达
-String str：匹配字符串
-</td>
-<td>String</td>
-<td>用于处理登陆微信过程的正则表达式的处理</td>
+<td>Verarbeitung von regulären Ausdrücken, die für den Anmeldevorgang bei WeChat verwendet werden</td
 </tr>
 
 <tr>
-<td>连接(创建)数据库</td>
-<td>com.zhangyibin.foundation.databaseservice;</td>
-<td>CreateSQLiteService</td>
-<td>main()</td>
+<td>Verbinden (Erstellen) einer Datenbank</td
+<td>com.zhangyibin.foundation.databaseservice;</td
+<td>CreateSQLiteService</td
+<td>Haupt()</td>
 <td>/</td>
 <td>/</td>
-<td>连接(创建)数据库</td>
+<td>Verbinden (Erstellen) einer Datenbank</td
 </tr>
 
 <tr>
-<td>message数据插入库</td>
-<td>com.zhangyibin.foundation.databaseservice;</td>
-<td>InsertService</td>
-<td>getInsertService()</td>
-<td>
-String date:日期
-String name：用户名
-String message：消息内容
+<td>Bibliothek für die Einfügung von Nachrichtendaten</td
+<td>com.zhangyibin.foundation.databaseservice;</td
+<td>EinfügenDienst</td
+<td>getInsertService()</td
+<td
+String date:date
+String name: Nutzername
+String message: der Inhalt der Nachricht
+</td
+<td>/</td>
+<td>Nachricht in die Datenbank eingefügt</td
+</tr>
+
+<tr>
+<td>Bibliothek für die Einfügung von Nachrichtendaten</td
+<td>com.zhangyibin.foundation.databaseservice;</td
+<td>EinfügenDienst</td
+<td>getInsertService()</td
+<td
+String strSql: die vollständige SQL-Anweisung
 </td>
 <td>/</td>
-<td>消息插入数据库</td>
+<td>Nachricht in die Datenbank eingefügt</td
 </tr>
 
 <tr>
-<td>message数据插入库</td>
-<td>com.zhangyibin.foundation.databaseservice;</td>
-<td>InsertService</td>
-<td>getInsertService()</td>
-<td>
-String strSql:完整的SQL语句
+<td>Abfragedienst</td
+<td>com.zhangyibin.foundation.databaseservice;</td
+<td>Dienst auswählen</td
+<td>GetSelectService()</td
+<td
+String sql: die vollständige Select-Anweisung
 </td>
 <td>/</td>
-<td>消息插入数据库</td>
-</tr>
-
-<tr>
-<td>查询服务</td>
-<td>com.zhangyibin.foundation.databaseservice;</td>
-<td>SelectService</td>
-<td>getSelectService()</td>
-<td>
-String sql:完整的select语句
-</td>
-<td>/</td>
-<td>数据查询</td>
+<td>Datenabfrage</td>
 </tr>
 
 </table>
 
 
-b)application(应用层):
+b) Anwendung (Anwendungsschicht):
 
 <table>
 <tr>
-<td>功能</td>
-<td>包</td>
-<td>类</td>
-<td>方法</td>
-<td>参数</td>
-<td>返回类型</td>
-<td>描述</td>
+<td>Funktionen</td
+<td>Pakete</td
+<td>Klassen</td
+<td>Methoden</td
+<td>Parameter</td
+<td>Rückgabeart</td
+<td>Beschreibung</td
 </tr>
 
 <tr>
-<td>特殊账号枚举</td>
-<td>com.zhangyibin.application.specialusers;</td>
-<td>SpecialUsersEnum</td>
-<td>getNameList()</td>
+<td>Sonderkonto-Aufzählung</td
+<td>com.zhangyibin.application.specialusers;</td
+<td>SpecialUsersEnum</td
+<td>GetNameList()</td
 <td>/</td>
 <td>String</td>
-<td>账号枚举列表类(不回复消息名单)</td>
+<td>AccountEnumerationList-Klasse (Liste der nicht antwortenden Nachrichten)</td
 </tr>
 
-<tr>
-<td>枚举值转化成List</td>
-<td>com.zhangyibin.application.speciauserslist;</td>
-<td>SpecialUsersList</td>
-<td>getSpecialUsersList()</td>
+<tr
+<td>Aufzählungswerte in Liste umgewandelt</td
+<td>com.zhangyibin.application.speciauserslist;</td
+<td>SpecialUsersList</td
+<td>getSpecialUsersList()</td
 <td>/</td>
-<td>List<String></td>
-<td>账号枚举列表类(不回复消息名单)</td>
+<td>Liste<String></td>
+<td>Kontoaufzählungslistenklasse (Liste mit nicht antwortenden Nachrichten)</td
 </tr>
 
-<tr>
-<td>启动程序入口</td>
-<td>com.zhangyibin.application;</td>
-<td>StartWechatApp</td>
-<td>GETStartWechatApp</td>
+<tr
+<td>Launcher-Eintrag</td
+<td>com.zhangyibin.application;</td
+<td>StartWechatApp</td
+<td>GETStartWechatApp</td
 <td>/</td>
 <td>/</td>
-<td>执行程序主入口</td>
+<td>Haupteingang des Programms ausführen</td
 </tr>
 
-</table>
+</tabelle
 
 
-c)aifunction(AI功能层):
+c) aifunction (AI-Funktionsschicht):
 
 <table>
 <tr>
-<td>功能</td>
-<td>包</td>
-<td>类</td>
-<td>方法</td>
-<td>参数</td>
-<td>返回类型</td>
-<td>描述</td>
+<td>Funktion</td
+<td>Pakete</td
+<td>Klassen</td
+<td>Methoden</td
+<td>Parameter</td
+<td>Rückgabeart</td
+<td>Beschreibung</td
 </tr>
 
 <tr>
-<td>机器人调用</td>
-<td>com.zhangyibin.aifunction;</td>
-<td>SquirrelAiRobot</td>
-<td>SquirrelRobot()</td>
-<td>String msg:消息内容</td>
+<td>Roboteraufruf</td
+<td>com.zhangyibin.aifunction;</td
+<td>EichhörnchenAiRoboter</td
+<td>EichhörnchenRoboter()</td
+<td>String msg:Inhalt der Nachricht</td
 <td>String</td>
-<td>调用图灵机器人接口(不回复消息名单)</td>
+<td>Aufruf der Turing-Bot-Schnittstelle (ohne auf die Nachrichtenliste zu antworten)</td
 </tr>
 
 </table>
 
 
-*使用层：<br>
+*Benutzerebene:<br
 
-使用层整体分为两部分进行设计test(测试)、use(使用层)。<br>
+Die Nutzungsschicht als Ganzes ist in zwei Teile unterteilt, für den Designtest (Test) und die Nutzung (Nutzungsschicht). <br>
 
 <table>
 <tr>
-<td>功能</td>
-<td>包</td>
-<td>类</td>
-<td>方法</td>
-<td>参数</td>
-<td>返回类型</td>
-<td>描述</td>
+<td>Funktionen</td
+<td>Pakete</td
+<td>Klassen</td
+<td>Methoden</td
+<td>Parameter</td
+<td>Rückgabeart</td
+<td>Beschreibung</td
 </tr>
 
 <tr>
-<td>测试代码</td>
-<td>com.squirrelAi.test;</td>
+<td>Testcode</td
+<td>com.squirrelAi.test;</td
 <td>/</td>
 <td>/</td>
 <td>/</td>
 <td>/</td>
-<td>工程测试代码</td>
+<td>Engineering-Test-Code</td
 </tr>
 
 <tr>
-<td>启动松鼠AI</td>
-<td>com.squirrelAi.use;</td>
-<td>UseSquirrelAi</td>
-<td>main</td>
+<td>Eichhörnchen-KI starten</td
+<td>com.squirrelAi.use;</td
+<td>BenutzeEichhörnchenAi</td
+<td>Hauptteil</td>
 <td>/</td>
-<td>/</td>
-<td>启动松鼠AI,调用StartWechatApp功能</td>
+<td>/</td
+<td>StartSquirrelAI,CallStartWechatApp Funktion</td
 </tr>
 
 </table>
 
 
-#### 四、版本管理
+#### IV. Versionierung
 
-<table>
+<table
 
 <tr>
-<td>日期</td>
-<td>版本号</td>
-<td>更新内容</td>
-<td>备注</td>
+<td>Datum</td
+<td>Versionsnummer</td
+<td>Inhalt aktualisieren</td
+<td>Bemerkungen</td
 </tr>
 
 <tr>
-<td>2018.06.18</td>
-<td>V1.0</td>
+<td>2018.06.18</td
+<td>V1.0</td
 <td>
-功能上线
-</td>
-<td>web框架：blade-kit-1.2.9-alpha.jar</td>
+Funktionen gehen live
+</td
+<td>Web-Framework: blade-kit-1.2.9-alpha.jar</td
 </tr>
 
 <tr>
