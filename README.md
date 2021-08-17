@@ -23,8 +23,8 @@
 </table>
 
 
-#### 一、制作背景
-
+#### Eins, Hintergrund machen
+    
 Im Zeitalter der Im-Proliferation wird die Kommunikation zwischen den Menschen immer bequemer, und man hat immer weniger Zeit und Raum für sich selbst. Jeden Tag sind Sie mit der Arbeit und dem Leben beschäftigt, und gleichzeitig müssen Sie eine Menge Energie aufwenden, um Nachrichten aus verschiedenen Szenarien zu bearbeiten.
 Möchten Sie innehalten und eine Weile allein sein, ohne Anrufe oder Nachrichten, und "die Welt für einen Moment für sich spüren"?
 WeChat ist aus dem Leben der chinesischen Nutzer nicht mehr wegzudenken; der größte Vorteil besteht darin, dass es die Menschen durch Peer-to-Peer-Instant-Messaging näher zusammenbringt. Diese Bequemlichkeit hat jedoch auch ein neues Problem mit sich gebracht: die "soziale Angst".
