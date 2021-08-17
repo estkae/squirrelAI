@@ -25,55 +25,54 @@
 
 #### 一、制作背景
 
-在这Im泛滥的年代，人与人之间的沟通变的越来越便利，属于自己的时间和空间也变的越来越少。每天忙碌的为工作、生活奔波，同时还要花大量的精力处理来自不同场景下的消息。<br>
-你是否会想停下脚步一个人静静地呆上一会，没有电话没有消息，好好感受一下“世界属于自己的瞬间”。<br>
-微信已然成为中国用户生活中不可或缺的一部分；最大的优势在与点对点的即时通讯方式，拉近了人与人之间的距离。然而，这种便利也带来了新的问题“社交恐惧”。<br>
-松鼠ＡＩ，就是一个可以帮助你处理大多数你认为不重要，但又不失“礼貌”的消息回复；而且通过“图灵机器人”的技术，它还可以给予你生活中更多的陪伴。<br>
-
+Im Zeitalter der Im-Proliferation wird die Kommunikation zwischen den Menschen immer bequemer, und man hat immer weniger Zeit und Raum für sich selbst. Jeden Tag sind Sie mit der Arbeit und dem Leben beschäftigt, und gleichzeitig müssen Sie eine Menge Energie aufwenden, um Nachrichten aus verschiedenen Szenarien zu bearbeiten.
+Möchten Sie innehalten und eine Weile allein sein, ohne Anrufe oder Nachrichten, und "die Welt für einen Moment für sich spüren"?
+WeChat ist aus dem Leben der chinesischen Nutzer nicht mehr wegzudenken; der größte Vorteil besteht darin, dass es die Menschen durch Peer-to-Peer-Instant-Messaging näher zusammenbringt. Diese Bequemlichkeit hat jedoch auch ein neues Problem mit sich gebracht: die "soziale Angst".
+Squirrel AI ist ein Tool, das Ihnen helfen kann, die meisten Nachrichten zu bearbeiten, die Sie für unwichtig halten, ohne dabei zu "höflich" zu sein; und durch die Technologie der "Turing-Bots" kann es Ihnen auch mehr Gesellschaft in Ihrem Leben bieten.
 ![image](./image/squirrelAI.png)
 
-如消息示例：<br>
-![image](./image/msg.png)
+Beispiel für die Nachricht:<br
+! [image](. /image/msg.png)
 
-#### 二、捐赠感谢
+#### II. Vielen Dank für Ihre Spende
 
-您要是觉得"松鼠Ai"是一个有意思的程序；并且有捐赠意向的同学，请捐赠到:<br>
-1.支付宝账号：13067760265 <br>
-2.微信号码：zhyblx<br>
-3.招商银行卡号：6214 8557 1279 0845<br>
-4.平安银行卡号：623058 000018 3696983<br>
+Wenn Sie denken, dass "Squirrel Ai" ein interessantes Programm ist, und wenn Sie die Absicht haben, zu spenden, spenden Sie bitte an:<br>
+1. alipay-Konto: 13067760265 <br>
+2) WeChat-Nummer: zhyblx<br>
+3. die Kartennummer der China Merchants Bank: 6214 8557 1279 0845<br>
+4. die Kartennummer der Ping An Bank: 623058 000018 3696983<br>
 
-对捐赠的个人和公司表示感谢：
+Vielen Dank an die Einzelpersonen und Unternehmen, die gespendet haben.
 <table>
 
 <tr>
-<td>捐赠时间</td>
-<td>公司(/个人)名称</td>
-<td>捐赠金额</td>
+<td>Datum der Spende</td
+<td>Name des Unternehmens (/der Einzelperson)</td
+<td>Spendenbetrag</td
 </tr>
 
 <tr>
-<td>2018-12-15</td>
-<td>杭州佳好佳美居装饰材料商城芝阑装饰材料商行</td>
-<td>¥500.0</td>
+<td>2018-12-15</td
+<td>Zhi Rang Händler für Dekorationsmaterial, Hangzhou Jiahao Jia Meiju Einkaufszentrum für Dekorationsmaterial</td
+<td>¥500.0</td
 </tr>
 
 </table>
 
 
 
-#### 三、流程设计
+#### III. Prozessgestaltung
 
-![image](./image/image.png)
+! [image](. /image/image.png)
 
 
-#### 四、接口说明
+#### IV. Schnittstellenbeschreibung
 
-松鼠AI项目整体分为两层：功能层和使用层。<br>
+Das gesamte Squirrel AI-Projekt ist in zwei Schichten unterteilt: die Funktionsschicht und die Nutzungsschicht. <br>
 
-*功能层：<br>
+*Funktionsschicht:<br
 
-功能层整体分为三部分进行设计foundation(基础层)、application(应用层)、aifunction(AI功能层)。<br>
+Die funktionale Schicht als Ganzes ist in drei Teile unterteilt, und zwar in die Entwurfsschicht (Basisschicht), die Anwendungsschicht (Anwendungsschicht) und die Funktionsschicht (AI-Funktionsschicht). <br>
 
 a)foundation(基础层):
 <table>
@@ -463,76 +462,75 @@ c)aifunction(AI功能层):
 <td>V1.1</td>
 <td>
 
-a)基础部分：<br>
-实现仿制web微信通过扫描客户端二维码进行登陆。<br>
-实现IOS设备可正常登陆。<br>
-实现获取微信通讯录的联系人。<br>
-实现监听微信联系人的消息。<br>
-实现可回复好友消息。<br>
+a) Basisteil:<br
+Implementierung einer WeChat-Imitation durch Scannen des QR-Codes des Kunden zur Anmeldung. <br>
+Stellen Sie fest, dass sich das IOS-Gerät normal anmelden kann. <br>
+Implementieren, um die Kontakte aus dem WeChat-Adressbuch zu erhalten. <br>
+Implementieren, um Nachrichten von WeChat-Kontakten abzuhören. <br>
+Implementieren Sie beantwortbare Freundschaftsnachrichten. <br>
 
-b)会话功能：<br>
-实现接入机器人回复好友消息。<br>
-实现屏蔽回复好友消息的黑名单功能。<br>
-黑名单功能包括屏蔽好友个人、聊天群以及公众号消息。<br>
-实现关闭机器人自动回复消息，可转人工回复好友消息。<br>
+b) Sitzungsfunktion:<br>
+Implementieren Sie den Zugangs-Bot, um auf Nachrichten von Freunden zu antworten. <br>
+Implementierung einer Blacklist-Funktion zum Blockieren von Antworten auf Buddy-Nachrichten. <br>
+Die Funktion der schwarzen Liste umfasst das Blockieren von persönlichen, Chatgruppen- und öffentlichen Nachrichten von Freunden. <br>
+Deaktivieren Sie die automatische Bot-Antwort und wechseln Sie zur manuellen Beantwortung der Nachrichten von Freunden. <br>
 
-c)拓展功能：<br>
-实现保存聊天消息在本地。<br>
-实现测试程序打包，调试可桌面运行。<br>
+c) Erweiterte Funktionalität:<br>
+Ermöglicht das lokale Speichern von Chat-Nachrichten. <br>
+Implementieren Sie Testprogramm-Paketierung, Debugging kann Desktop ausgeführt werden. <br>
 
-</td>
-<td>web框架：blade-kit-1.2.9-alpha.jar</td>
+</td
+<td>Web-Framework: blade-kit-1.2.9-alpha.jar</td
 </tr>
 
 <tr>
-<td>2018.08.16</td>
-<td>V1.2</td>
+<td>2018.08.16</td
+<td>V1.2</td
 <td>
-增加白名单功能，以实现区分重要好友提供人工回复的消息的方式，非重要好友提供机器人回复消息的方式。<br>
-</td>
-<td>web框架：blade-kit-1.2.9-alpha.jar</td>
+Fügen Sie eine Whitelist-Funktionalität hinzu, um zwischen wichtigen Freunden, die eine manuelle Antwort auf Nachrichten geben, und unwichtigen Freunden, die eine Bot-Antwort auf Nachrichten geben, unterscheiden zu können. <br>
+</td
+<td>Web-Framework: blade-kit-1.2.9-alpha.jar</td
+</tr
+
+<tr>
+<td>2018.09.28</td
+<td>V2.0</td
+<td>Ersetzung von JDK11<br> </td
+<td>Web-Framework: blade-kit-1.2.9-alpha.jar</td
 </tr>
 
 <tr>
-<td>2018.09.28</td>
-<td>V2.0</td>
-<td> 更换JDK11<br> </td>
-<td>web框架：blade-kit-1.2.9-alpha.jar</td>
-</tr>
+<td>2018.10.12</td
+<td>V2.1</td
+<td 
+1. umbenanntes Projekt: Eichhörnchen-KI.<br 
+2. Code-Refactoring; funktionale Schicht unterteilt in drei Teile: Basisschicht, Anwendungsschicht, AI-Funktionsschicht. <br
+3. der Zugang zu Datenbankdiensten, die vollständige Speicherung von Nachrichten. <br>
+4. ersetzen Sie das Web-Framework: blade-kit-1.3.4.jar
 
-<tr>
-<td>2018.10.12</td>
-<td>V2.1</td>
-<td> 
-1.项目更名：松鼠AI。<br> 
-2.代码重构；功能层划分为三部分基础层、应用层、AI功能层。<br>
-3.接入数据库服务,完成消息存储。<br>
-4.更换web框架：blade-kit-1.3.4.jar
-
-</td>
-<td>
-1.web框架：blade-kit-1.3.4.jar<br>
-2.JDBC：sqlite-jdbc-3.21.0.jar<br>
-</td>
-</tr>
+</td
+<td
+1. Web-Framework: blade-kit-1.3.4.jar<br>
+2.JDBC: sqlite-jdbc-3.21.0.jar<br>
+</td
+</tr
 
 
 <tr>
-<td>2018.10.28</td>
-<td>V2.2</td>
-<td> 
-更新内容：<br>
-实现将新好友添加到数据库中。
-</td>
+<td>2018.10.28</td
+<td>V2.2</td
+<td 
+Aktualisierungen:<br>
+Implementiert, um neue Freunde in die Datenbank aufzunehmen.
+</td
 <td>
 --
-</td>
+</td
 </tr>
 
 </table>
 
-本地备份：/home/zhangyibin/文档/松鼠AI备份列表
-
+Lokale Sicherung: /home/zhangyibin/documentation/Squirrel AI Sicherungsliste
 
 
 
